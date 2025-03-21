@@ -4,7 +4,6 @@ html {
     height: 100%;
     width: 100%;
     font-family: myFirstFont;
-    background-color: aliceblue;
 }
 
 * {
@@ -23,6 +22,7 @@ p {
 }
 
 body {
+    background-color: aliceblue;
     margin: 0;
     padding: 0;
     display: flex;
