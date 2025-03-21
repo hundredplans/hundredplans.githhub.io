@@ -1,6 +1,8 @@
 html {
     height: 100%;
+    width: 100%;
     font-family: myFirstFont;
+    background-color: aliceblue;
 }
 
 @font-face {
@@ -18,26 +20,43 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
+}
+
+ul.topnav li a {
+    display: block;
+    text-align: center;
+}
+
+#topimg {
+    margin-right: auto;
+}
+
+#top > *:not(:last-child):not(:first-child) > a {
+    border-right: solid black 2px;
 }
 
 #top {
     display: flex;
+    justify-content: flex-start;
+    gap: 1em;
     color: lightcoral;
+    background-color: white;
     padding: 20px;
 }
 
-@media screen and (max-width: 800px) {
-    #top {
-        flex-direction: column;
-    }
-}
 
 #logo_image {
     width: 100px;
     height: 100px;
 }
 
-#topheaders > h2 {
+li {
+    list-style: none;
+}
+
+
+a {
     font-size: 3em;
     padding: 0px 10px 0px 0px;
     margin-top: 0px;
@@ -46,30 +65,18 @@ body {
 }
 
 h3 {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 p {
     font-size: 1.6em;
 }
 
-#topheaders > *:not(:last-child) {
-    border-right: solid black 2px;
-}
-
-#topheaders {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    gap: 1em;
-}
-
 #bottom {
     background-color: aliceblue;
     display: flex;
     padding: 10px;
-    min-height: 100%;
-    height: fit-content;
+    height: auto;
 }
 
 #classroomimages {
@@ -83,4 +90,50 @@ p {
     height: auto;
     margin: 5px;
     flex-basis: calc(50% - 20px);
+}
+
+
+@media screen and (max-width: 800px) {
+    #top {
+        flex-direction: column;
+    }
+
+    #topimg {
+        margin: 0;
+    }
+
+    #top *:not(:last-child):not(:first-child) > a {
+        border-right: solid black 0px;
+        border-bottom: solid lightpink 2px;
+    }
+
+    #top {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #top *:last-child > a {
+        border-bottom: solid lightpink 2px;
+    }
+
+    #bottom {
+        flex-direction: column;
+    }
+
+    #classroomimages {
+        flex-flow: column;
+    }
+
+    #classroomimages > img {
+        width: 100%;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
 }
