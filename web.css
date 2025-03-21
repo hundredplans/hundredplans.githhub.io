@@ -26,6 +26,12 @@ body {
     padding: 20px;
 }
 
+@media screen and (max-width: 800px) {
+    #top {
+        flex-direction: column;
+    }
+}
+
 #logo_image {
     width: 100px;
     height: 100px;
