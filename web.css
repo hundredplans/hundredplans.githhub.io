@@ -7,6 +7,12 @@ html {
     background-color: aliceblue;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
 @font-face {
     font-family: myFirstFont;
     src: url(roboto.ttf);
@@ -23,6 +29,7 @@ body {
     flex-direction: column;
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
 }
 
 ul.topnav li a {
