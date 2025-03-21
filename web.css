@@ -92,8 +92,16 @@ p {
     flex-basis: calc(50% - 20px);
 }
 
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    margin-top: auto;
+}
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
     #top {
         flex-direction: column;
     }
