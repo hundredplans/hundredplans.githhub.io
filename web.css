@@ -1,0 +1,80 @@
+html {
+    height: 100%;
+    font-family: myFirstFont;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(roboto.ttf);
+  }
+
+p {
+    color: grey;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#top {
+    display: flex;
+    color: lightcoral;
+    padding: 20px;
+}
+
+#logo_image {
+    width: 100px;
+    height: 100px;
+}
+
+#topheaders > h2 {
+    font-size: 3em;
+    padding: 0px 10px 0px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: min-content;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.6em;
+}
+
+#topheaders > *:not(:last-child) {
+    border-right: solid black 2px;
+}
+
+#topheaders {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 1em;
+}
+
+#bottom {
+    background-color: aliceblue;
+    display: flex;
+    padding: 10px;
+    min-height: 100%;
+    height: fit-content;
+}
+
+#classroomimages {
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+}
+
+#classroomimages > img {
+    width: 30%;
+    height: auto;
+    margin: 5px;
+    flex-basis: calc(50% - 20px);
+}
